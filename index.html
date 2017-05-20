@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pepe.science</title>
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+        }
+        
+        .wrapper {
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+            background-size: 1800% 1800%;
+            -webkit-animation: rainbow 18s ease infinite;
+            -z-animation: rainbow 18s ease infinite;
+            -o-animation: rainbow 18s ease infinite;
+            animation: rainbow 18s ease infinite;
+        }
+        
+        @-webkit-keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+            50% {
+                background-position: 100% 19%
+            }
+            100% {
+                background-position: 0% 82%
+            }
+        }
+        
+        @-moz-keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+            50% {
+                background-position: 100% 19%
+            }
+            100% {
+                background-position: 0% 82%
+            }
+        }
+        
+        @-o-keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+            50% {
+                background-position: 100% 19%
+            }
+            100% {
+                background-position: 0% 82%
+            }
+        }
+        
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+            50% {
+                background-position: 100% 19%
+            }
+            100% {
+                background-position: 0% 82%
+            }
+        }
+        
+        #pepe {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: scaleX(-1);
+            filter: FlipH;
+            width: 40%;
+        }
+        
+        #main {
+            margin: 40px;
+            height: calc(100% - 40px * 2);
+            width: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        
+        #header {
+            font-size: 500%;
+            font-family: 'Ravi Prakash', cursive;
+            font-weight: bold;
+            color: #FF1CAE;
+            text-shadow: 2px 2px aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="main">
+            <span id="header">pepe.science</span>
+        </div>
+        <img src="pepe.png" id="pepe" alt="pepe">
+    </div>
+</body>
+
+</html>
